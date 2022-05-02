@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>JavaScript Tutorial</title>
+
+	<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+	<div class="slider_area">
+
+		<div class="slider">
+
+			<div class="slides active"><h1>1</h1></div>
+			<div class="slides "><h1>2</h1></div>
+			<div class="slides"><h1>3</h1></div>
+			<div class="slides"><h1>4</h1></div>
+			<div class="slides"><h1>5</h1></div>
+
+		</div>
+
+		<button class="prev" id="prev">Prev</button>
+		<button class="next" id="next">Next</button>
+
+		<div class="indi">
+
+			<ul id="ul">
+
+				<li class="active" onclick="GoSlides(0)"></li>
+				<li onclick="GoSlides(1)"></li>
+				<li onclick="GoSlides(2)"></li>
+				<li onclick="GoSlides(3)"></li>
+				<li onclick="GoSlides(4)"></li>
+
+			</ul>
+
+		</div>
+
+	</div>
+	
+	<script src="js/scripts.js"></script>
+
+</body>

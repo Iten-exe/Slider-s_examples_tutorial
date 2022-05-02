@@ -1,0 +1,31 @@
+/*Общие*/
+*,
+::before,
+::after {
+	box-sizing: border-box;
+}
+
+.wrapper {
+	width: 600px;
+	margin: 0 auto;
+}
+
+/*Слайдер*/
+.slider_container {
+	overflow: hidden; /*Итемы прячутся за пределами окна*/
+	background-color: pink; /*Для проверки прокрутки*/
+}
+.slider_track {
+	display: flex; /*Для выстраивания элементов в ряд*/
+	background-color: yellow; /*Для проверки прокрутки*/
+	transition: .2s; /*Для плавной прокрутки*/
+}
+.slider_item {
+	height: 100px;
+}
+.slider_item:nth-child(3n+1) { background-color: red; } /*Каждый третий элемент начиная с первого будет красным*/
+.slider_item:nth-child(3n+2) { background-color: green; } /*Каждый третий элемент начиная с второго будет зеленым*/
+.slider_item:nth-child(3n+3) { background-color: blue; } /*Каждый третий элемент начиная с третьего будет синим*/
+.slider_buttons {
+	text-align: center;
+}
